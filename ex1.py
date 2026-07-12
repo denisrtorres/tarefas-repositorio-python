@@ -22,3 +22,14 @@ while True:
 
     if preco > 100:
         acima_100 += 1
+        print("\n===== RELATÓRIO =====")
+
+if total_produtos > 0:
+    media = soma_precos / total_produtos
+
+    print(f"Total de produtos: {total_produtos}")
+    print(f"Produto mais caro: {mais_caro} (R$ {preco_mais_caro:.2f})")
+    print(f"Média dos preços: R$ {media:.2f}")
+    print(f"Produtos acima de R$100: {acima_100}")
+else:
+    print("Nenhum produto foi cadastrado.")
